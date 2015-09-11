@@ -18,14 +18,15 @@ Add it to your Elixir-enhanced Gulpfile, like so:
 ```
 var elixir = require('laravel-elixir');
 
-require('laravel-elixir-typescript');
+// import the dependency
+var elixirTypscript = require('elixir-typescript');
 
 elixir(function(mix) {
   mix.typescript('app.js');
 });
 ```
 
-This will compile your `resources/assets/typescript/index.ts` file.
+This will compile all *.ts files in your `resources/assets/typescript/` folder.
 
 If you'd like to output to a different directory than the default `public/js`, then you may override this as well.
 
