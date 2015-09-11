@@ -1,6 +1,9 @@
 elixir-typescript (forked from laravel-elixir-typescript by [MikeyAlder](https://github.com/MikeyAlder/laravel-elixir-typescript))
 ========================
 
+## Prerequirement
+You have to install [Laravel's Elixir](http://laravel.com/docs/master/elixir)(Version 3.0 or higher) and its dependencies first.
+
 ## Installation
 Install with Node.js
 ```
