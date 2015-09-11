@@ -26,7 +26,7 @@ elixir(function(mix) {
 });
 ```
 
-This will compile all *.ts files in your `resources/assets/typescript/` folder.
+This will compile all *.ts files in your `resources/assets/typescript/` folder and concat the compiled content into `public/js/app.js`.
 
 If you'd like to output to a different directory than the default `public/js`, then you may override this as well.
 
