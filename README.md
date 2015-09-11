@@ -1,5 +1,11 @@
-laravel-elixir-typescript
+elixir-typescript (forked from laravel-elixir-typescript by [MikeyAlder](https://github.com/MikeyAlder/laravel-elixir-typescript))
 ========================
+
+## Installation
+Install with Node.js
+```
+npm install elixir-typescript
+```
 
 ## Usage
 A simple [gulp-typescript](https://github.com/ivogabe/gulp-typescript) wrapper ingredient for Laravel Elixir.
