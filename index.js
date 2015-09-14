@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var elixir = require('laravel-elixir');
-//var Notification = require('laravel-elixir/ingredients/commands/Notification');
 var ts = require('gulp-typescript');
 var concat = require('gulp-concat');
 var _ = require('underscore');
@@ -10,25 +9,22 @@ var _laravelReporter = require('./reporter');
 
 var Task = elixir.Task;
 
-elixir.extend('typescript', function(output, dest, options) {
+elixir.extend('typescript', function (output, dest, options) {
 
     var pluginName = 'typescript';
     var search = '**/*.+(ts)';
+    var assetPath = './' + elixir.config.assetsPath;
 
     options = _.extend({
         sortOutput: true
     }, options);
 
-    new Task(pluginName, function(){
-        var tsResult = gulp.src('./resources/assets/typescript/**/*.ts')
+    new Task(pluginName, function () {
+        var tsResult = gulp.src(assetPath + '/**/*.ts')
             .pipe(ts(options, undefined, _laravelReporter.ElixirMessage()));
         return tsResult
             .pipe(concat(output))
             .pipe(gulp.dest(dest || './public/js/app.js'));
     })
-   .watch(
-        pluginName,
-        elixir.config.assetsDir + 'typescript' + '/' + search
-    );
-    //return elixir.config.queueTask(pluginName);
+        .watch(assetPath + '/' + search);
 });
