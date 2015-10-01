@@ -26,5 +26,5 @@ elixir.extend('typescript', function (output, dest, options) {
             .pipe(concat(output))
             .pipe(gulp.dest(dest || './public/js/app.js'));
     })
-        .watch(assetPath + '/' + search);
+        .watch(assetPath +  '/typescript/**');
 });
