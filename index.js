@@ -18,10 +18,11 @@ elixir.extend('typescript', function (output, dest, options) {
 
     new Task(pluginName, function () {
         var tsResult = gulp.src(assetPath + '/**/*.ts')
-            .pipe(ts(options, undefined)).on('error', function(e) {
-                new elixir.Notification().error(e, 'TypeScript Compilation Failed!');
-                this.emit('end');
-            });
+            .pipe(ts(options))
+                .on('error', function(e) {
+                    new elixir.Notification().error(e, 'TypeScript Compilation Failed!');
+                    this.emit('end');
+                });
         return tsResult
             .pipe(concat(output))
             .pipe(gulp.dest(dest || './public/js/app.js'))
