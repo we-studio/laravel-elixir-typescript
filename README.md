@@ -1,5 +1,8 @@
-elixir-typescript (forked from laravel-elixir-typescript by [MikeyAlder](https://github.com/MikeyAlder/laravel-elixir-typescript))
+ws-laravel-elixir-typescript
 ========================
+Forked from [jfoliveira](https://github.com/jfoliveira/laravel-elixir-typescript) which forked from [okaufmann](https://github.com/okaufmann/laravel-elixir-typescript) which forked from laravel-elixir-typescript by [MikeyAlder](https://github.com/MikeyAlder/laravel-elixir-typescript).
+
+Since none of these repositories were no longer maintained, I decided to take the job. Feel free to contribute, Pull Request or anything.
 
 ## Prerequirement
 You have to install [Laravel's Elixir](http://laravel.com/docs/master/elixir)(Version 3.0 or higher) and its dependencies first.

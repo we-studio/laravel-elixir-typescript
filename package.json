@@ -1,6 +1,6 @@
 {
-  "name": "elixir-typescript",
-  "version": "1.0.2",
+  "name": "ws-laravel-elixir-typescript",
+  "version": "1.0.3",
   "description": "Laravel Elixir Typescript Compiler Extension",
   "main": "index.js",
   "scripts": {
@@ -14,15 +14,18 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/okaufmann/laravel-elixir-typescript"
+    "url": "https://github.com/we-studio/laravel-elixir-typescript"
   },
   "author": {
-    "name": "MikeyAlder"
+    "name": "MikeyAlder",
+    "name": "jfoliveira",
+    "name": "okaufmann",
+    "name": "wembernard"
   },
   "license": "MIT",
-  "homepage": "https://github.com/okaufmann/laravel-elixir-typescript",
+  "homepage": "https://github.com/we-studio/laravel-elixir-typescript",
   "bugs": {
-    "url": "https://github.com/okaufmann/laravel-elixir-typescript/issues"
+    "url": "https://github.com/we-studio/laravel-elixir-typescript/issues"
   },
   "dependencies": {
     "gulp-typescript":"^2.4.2",
